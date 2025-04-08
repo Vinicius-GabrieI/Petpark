@@ -1,4 +1,18 @@
 @import url(./css/header.css);
+@import url(./css/hero.css);
+@import url(./css/services.css);
+@import url(./css/plans.css);
+@import url(./css/deals.css);
+@import url(./css/partners.css);
+@import url(./css/newsletter.css);
+@import url(./css/footer.css);
+
+:root {
+    --cinza-escuro: #444444;
+    --coral: #EE6451;
+    --cor-fundo: #FFF5EB;
+    --fonte-titulo: 'Sigmar'; 
+}
 
 body {
     font-family: 'Poppins', sans-serif;
