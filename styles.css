@@ -1,3 +1,6 @@
+/* =======================
+   Importações por Seção
+   ======================= */
 @import url(./css/header.css);
 @import url(./css/hero.css);
 @import url(./css/services.css);
@@ -7,13 +10,98 @@
 @import url(./css/newsletter.css);
 @import url(./css/footer.css);
 
+
+/* =======================
+   Variáveis Globais
+   ======================= */
 :root {
-    --cinza-escuro: #444444;
-    --coral: #EE6451;
-    --cor-fundo: #FFF5EB;
-    --fonte-titulo: 'Sigmar'; 
+    /* ---------- Cores ---------- */
+    --cor-primaria-dark: #c13724;
+    --cor-primaria-light: #ee6451;
+    --cor-secundaria-light: #fff5eb;
+    --cor-secundaria-dark: #f5e6d6;
+    --cor-terciaria-medio: #cbda74;
+    --cor-terciaria-dark: #a2b72b;
+    --cor-terciaria-light: #eff2e1;
+    --cor-neutra-dark: #444444;
+    --cor-neutra-medio: #b9b9b9;
+    --cor-neutra-light: #ffffff;
+
+    /* ---------- Tipografia ---------- */
+    --font-sigmar: 'Sigmar', sans-serif; 
+    --font-poppins: 'Poppins', sans-serif;
+
+   /* ------- Tamanhos de Fonte ------- */
+    --font-size-b: 1rem;       /* 16px */
+    --font-size-m: 1.25rem;    /* 20px */
+    --font-size-xm: 1.563rem;  /* 25px */
+    --font-size-l: 1.938rem;   /* 31px */
+    --font-size-xl: 2.438rem;  /* 39px */
+    --font-size-2xl: 3.063rem; /* 49px */
+    --font-size-3xl: 4.5rem;   /* 72px */
+
+    /* ------- Altura das Linhas ------- */
+    --line-height-t: 1.2em;
+    --line-height-n: 1.3em;
+
+    /* ----- Espaçamentos (Padding) ----- */
+    --padding-xs: 0.25rem; /* 4px */
+    --padding-s: 0.5rem; /* 8px */
+    --padding-m: 1rem; /* 16px */
+    --padding-xm: 1.5rem; /* 24px */
+    --padding-l: 1.813rem; /* 29px */
+    --padding-xl: 2rem; /* 32px */
+    --padding-2xl: 2.5rem; /* 40px */
+    --padding-3xl: 3.75rem; /* 60px */
+    --padding-4xl: 4rem; /* 64px */
+    --padding-5xl: 4.75rem; /* 76px */
+    --padding-6xl: 5rem; /* 80px */
+
+    /* ------- Espaçamentos (Gap) ------- */
+    --gap-xs: 0.25rem; /* 4px */
+    --gap-s: 0.5rem; /* 8px */
+    --gap-m: 1rem; /* 16px */
+    --gap-xm: 1.5rem; /* 24px */
+    --gap-l: 2rem; /* 32px */
+    --gap-xl: 2.5rem; /* 40px */
+    --gap-2xl: 5rem; /* 80px */
+    --gap-3xl: 6rem; /* 96px */
 }
 
+
+/* =======================
+   Tipografia dos títulos
+   ======================= */
+
+/* --------- Font family --------- */
+h1, h2, h3 {
+    font-family: var(--font-sigmar);
+}
+
+
+/* ---------- Font size ---------- */
+h1 {
+    font-size: var(--font-size-3xl);
+}
+
+h2 {
+    font-size: var(--font-size-xl);
+}
+
+
+/* --------- Line height --------- */
+h1 {
+    line-height: var(--line-height-n);
+}
+  
+h2, h3 {
+    line-height: var(--line-height-t);
+}
+
+
+/* =======================
+   Estilo Global do Body
+   ======================= */
 body {
     font-family: 'Poppins', sans-serif;
     color: #444444;
@@ -21,8 +109,9 @@ body {
     height: 100%;
     box-sizing: border-box;
     background-color: #ffffff;
+}
 
-    .container {
-        width: 1200px;
-    }
+/*---- Container centralizado ----*/
+.container {
+    width: 1200px;
 }
