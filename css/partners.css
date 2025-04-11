@@ -1,0 +1,17 @@
+.partners {
+    padding: var(--padding-6xl) var(--padding-xm);
+    text-align: center;
+}
+
+.partners__title {
+    margin-bottom: 2rem;
+    color: var(--cor-primaria-light);
+}
+
+.partners__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: var(--gap-2xl);
+    row-gap: var(--gap-xm);
+}
