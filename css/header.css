@@ -1,8 +1,7 @@
 .header {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: var(--padding-xm) 0;
+    padding: var(--padding-xm) var(--padding-xm);
     font-size: var(--font-size-m);
 }
 
