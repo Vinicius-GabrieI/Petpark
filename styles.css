@@ -32,13 +32,13 @@
     --font-poppins: 'Poppins', sans-serif;
 
    /* ------- Tamanhos de Fonte ------- */
-    --font-size-b: 1rem;       /* 16px */
-    --font-size-m: 1.25rem;    /* 20px */
-    --font-size-xm: 1.563rem;  /* 25px */
-    --font-size-l: 1.938rem;   /* 31px */
-    --font-size-xl: 2.438rem;  /* 39px */
+    --font-size-b: 1rem; /* 16px */
+    --font-size-m: 1.25rem; /* 20px */
+    --font-size-xm: 1.563rem; /* 25px */
+    --font-size-l: 1.938rem; /* 31px */
+    --font-size-xl: 2.438rem; /* 39px */
     --font-size-2xl: 3.063rem; /* 49px */
-    --font-size-3xl: 4.5rem;   /* 72px */
+    --font-size-3xl: 4.5rem; /* 72px */
 
     /* ------- Altura das Linhas ------- */
     --line-height-t: 1.2em;
@@ -103,15 +103,17 @@ h2, h3 {
    Estilo Global do Body
    ======================= */
 body {
-    font-family: 'Poppins', sans-serif;
-    color: #444444;
+    font-family: var(--font-poppins);
+    color: var(--cor-neutra-dark);
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    background-color: #ffffff;
+    background-color: var(--cor-neutra-light);
 }
 
 /*---- Container centralizado ----*/
 .container {
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
 }
