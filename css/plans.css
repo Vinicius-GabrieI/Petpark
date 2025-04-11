@@ -1,0 +1,69 @@
+.plans {
+    text-align: center;
+    padding: var(--padding-6xl) var(--padding-xm);
+}
+
+.plans__container {
+    background-color: var(--cor-primaria-light);
+    padding: var(--padding-2xl) 0;
+    border-radius: 2rem;
+}
+
+.plans__card:nth-child(1) {
+    margin-left: var(--padding-2xl);
+}
+
+.plans__card:nth-child(3) {
+    margin-right: var(--padding-2xl);
+}
+
+.plans__title {
+    color: var(--cor-secundaria-light);
+    margin-bottom: 2rem;
+}
+
+.plans__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap-xl);
+    justify-content: center;
+}
+
+.plans__card {
+    width: 266.67px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--padding-m);
+    background-color: var(--cor-neutra-light);
+    border-radius: 1rem;
+}
+
+.plans__card-title {
+    font-size: var(--font-size-l);
+    margin: 16px 0;
+}
+
+.plans__card-description {
+    line-height: 1.5em;
+}
+
+.plans__card-price {
+    font-family: var(--font-sigmar);
+    font-size: var(--font-size-xl);
+    line-height: var(--line-height-t);
+    color: var(--cor-primaria-light);
+    margin: 16px 0 8px;
+}
+
+.plans__card-button {
+    height: 2.875rem;
+    background-color: var(--cor-primaria-light);
+    color: var(--cor-neutra-light);
+    font-size: var(--font-size-m);
+    font-weight: 500;
+    padding: var(--padding-s) var(--padding-xm);
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+}
