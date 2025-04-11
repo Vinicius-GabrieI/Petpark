@@ -1,0 +1,39 @@
+.deals {
+    padding: var(--padding-6xl) var(--padding-xm);
+    text-align: center;
+    background-color: var(--cor-secundaria-light);
+}
+
+.deals__title {
+    color: var(--cor-primaria-light);
+    margin-bottom: 2rem;
+}
+
+.carousel {
+    display: flex;
+    gap: var(--gap-xm);
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel__item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-m);
+    background-color: var(--cor-neutra-light);
+    padding: var(--padding-m) var(--padding-s);
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.carousel__name,
+.carousel__price {
+    font-family: var(--font-poppins);
+    font-size: var(--font-size-xm);
+    font-weight: 600;
+}
+
+.carousel__price {
+    margin-top: auto;
+    line-height: var(--line-height-t);
+}
