@@ -68,7 +68,7 @@
     </section>
 
     <section class="plans">
-      <div class="plans__container container">
+      <div class="plans__container">
         <h2 class="plans__title">Planos mensais para seu pet</h2>
         <div class="plans__cards">
           <div class="plans__card">
@@ -110,42 +110,35 @@
 
     <section class="deals">
       <h2 class="deals__title">Super ofertas:</h2>
-      <div class="container">
-        <ul class="carousel">
-          <li class="carousel__item">
-            <img class="carousel__image" src="./assets/imagens/biskrock.png" alt="Biscoito Pedigree Biscrok" />
-            <h3 class="carousel__name">Biscoito Pedigree Biscrok</h3>
-            <p class="carousel__description">Multi para Cães Adultos 500g</p>
-            <span class="carousel__price">R$ 19,99</span>
-          </li>
+      <ul class="deals__list container">
+        <li class="deals__item">
+          <img class="deals__image" src="./assets/imagens/biskrock.png" alt="Biscoito Pedigree Biscrok" />
+          <h3 class="deals__name">Biscoito Pedigree Biscrok</h3>
+          <p class="deals__description">Multi para Cães Adultos 500g</p>
+          <span class="deals__price">R$ 19,99</span>
+        </li>
 
-          <li class="carousel__item">
-            <img class="carousel__image" src="./assets/imagens/golden-especial.png" alt="Ração Golden Special" />
-            <h3 class="carousel__name">Ração Golden Special</h3>
-            <p class="carousel__description">Cães Adultos Sabor Frango e Carne 15kg</p>
-            <span class="carousel__price">R$ 149,00</span>
-          </li>
+        <li class="deals__item">
+          <img class="deals__image" src="./assets/imagens/golden-especial.png" alt="Ração Golden Special" />
+          <h3 class="deals__name">Ração Golden Special</h3>
+          <p class="deals__description">Cães Adultos Sabor Frango e Carne 15kg</p>
+          <span class="deals__price">R$ 149,00</span>
+        </li>
 
-          <li class="carousel__item">
-            <img class="carousel__image" src="./assets/imagens/pipicat.png" alt="Areia Pipicat" />
-            <h3 class="carousel__name">Areia Higiênica Pipicat</h3>
-            <p class="carousel__description">Classic para Gatos 4 Kg</p>
-            <span class="carousel__price">R$ 45,00</span>
-          </li>
+        <li class="deals__item">
+          <img class="deals__image" src="./assets/imagens/pipicat.png" alt="Areia Pipicat" />
+          <h3 class="deals__name">Areia Higiênica Pipicat</h3>
+          <p class="deals__description">Classic para Gatos 4 Kg</p>
+          <span class="deals__price">R$ 45,00</span>
+        </li>
 
-          <li class="carousel__item">
-            <img class="carousel__image" src="./assets/imagens/arranhador.png" alt="Arranhador São Benedito Pet" />
-            <h3 class="carousel__name">Arranhador São Benedito Pet</h3>
-            <p class="carousel__description">Redondo com pluma e mola rosa</p>
-            <span class="carousel__price">R$ 59,90</span>
-          </li>
-
-          <div class="carousel__controls">
-            <button class="carousel__nav">←</button>
-            <button class="carousel__nav">→</button>
-          </div>
-        </ul>
-      </div>
+        <li class="deals__item">
+          <img class="deals__image" src="./assets/imagens/arranhador.png" alt="Arranhador São Benedito Pet" />
+          <h3 class="deals__name">Arranhador São Benedito Pet</h3>
+          <p class="deals__description">Redondo com pluma e mola rosa</p>
+          <span class="deals__price">R$ 59,90</span>
+        </li>
+      </ul>
     </section>
 
     <section class="partners">
@@ -169,30 +162,36 @@
     <section class="newsletter">
       <h2 class="newsletter__title">Assine nossa newsletter!</h2>
       <p class="newsletter__text">Cadastre-se e receba nossas promoções e novidades!</p>
-      <form class="newsletter__form container">
+      <form class="newsletter__form">
         <label for="email">
           <input type="email" id="email" class="newsletter__input" placeholder="Insira seu endereço de email"
             required />
         </label>
 
-        <div class="newsletter__options">
+        <div class="newsletter__pet-selection">
           <span>Selecione seu pet:</span>
 
-          <label for="cat" class="newsletter__option">
-            <input type="checkbox" id="cat" name="pet" value="cat" /><span>Gato</span>
-          </label>
+          <div class="newsletter__options">
+            <label for="cat" class="newsletter__option">
+              <input type="checkbox" id="cat" name="pet" value="cat" />
+              Gato <span></span>
+            </label>
 
-          <label for="dog" class="newsletter__option">
-            <input type="checkbox" id="dog" name="pet" value="dog" /><span>Cão</span>
-          </label>
+            <label for="dog" class="newsletter__option">
+              <input type="checkbox" id="dog" name="pet" value="dog" />
+              Cão <span></span>
+            </label>
 
-          <label for="rodent" class="newsletter__option">
-            <input type="checkbox" id="rodent" name="pet" value="rodent" /><span>Roedor</span>
-          </label>
+            <label for="rodent" class="newsletter__option">
+              <input type="checkbox" id="rodent" name="pet" value="rodent" />
+              Roedor <span></span>
+            </label>
 
-          <label for="other" class="newsletter__option">
-            <input type="checkbox" id="other" name="pet" value="other" /><span>Outros</span>
-          </label>
+            <label for="other" class="newsletter__option">
+              <input type="checkbox" id="other" name="pet" value="other" />
+              Outros <span></span>
+            </label>
+          </div>
         </div>
 
         <button type="submit" class="newsletter__button">Inscrever</button>
